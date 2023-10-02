@@ -1,0 +1,165 @@
+
+*{
+    scroll-behavior: smooth;
+    font-family: 'Montserrat';
+    scroll-padding: 10vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    background-image: url(images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-wrapper{
+    width: 60vw;
+    min-height: 80vh;
+    background: transparent;
+    box-shadow: 0 0 10px rgba(31, 28, 28, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-title{
+    width: 12rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-list{
+    box-shadow: 0 0 2px rgba(31, 28, 28, 0.8);
+    background-color:  #ffffffab;
+    border-radius: 20px;
+    width: 100%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.list-input{
+    background: transparent;
+    border: none;
+    height: 2.5rem;
+    padding-left: 10px;
+    flex: 1;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+button{
+    height: 2.5rem;
+    width: 5rem;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 217, 168);
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    padding: 15px 30px 10px 40px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+ul li::before{
+    content: '';
+    margin-left: -35px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+}
+
+.checked{
+    text-decoration: line-through;
+}
+
+.status{
+    appearance: none;
+    position: absolute;
+    margin-left: -35px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.status:checked{
+    background-color: white;
+}
+
+.check{
+    width: 30px;
+    height: 3px;
+    position: absolute;
+}
+
+.check::before{
+    content: "";
+    position: absolute;
+    margin-top: 4px;
+    margin-left: -33px;
+    width: 13px;
+    height: 7px;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-45deg);
+}
+
+.delete{
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    top: 25px;
+    right: 0;
+}
+
+.delete::before {
+    content: "";
+    position: absolute;
+    margin-left: 5px;
+    width: 20px;
+    height: 3px;
+    background: black;
+    transform: rotate(45deg);
+}
+
+.delete::after {
+    content: "";
+    position: absolute;
+    margin-left: 5px;
+    width: 20px;
+    height: 3px;
+    background: rgb(0, 0, 0);
+    transform: rotate(-45deg);
+}
+
+.remove{
+    position: absolute;
+    appearance: none;
+    right: 5px;
+    top: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
